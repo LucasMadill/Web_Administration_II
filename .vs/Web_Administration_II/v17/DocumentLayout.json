@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,10 +32,9 @@
               "RelativeDocumentMoniker": "BIOs\\Madill_BIO.html",
               "ToolTip": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\BIOs\\Madill_BIO.html",
               "RelativeToolTip": "BIOs\\Madill_BIO.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-29T15:54:08.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T15:54:08.163Z"
             },
             {
               "$type": "Document",
@@ -41,14 +44,10 @@
               "RelativeDocumentMoniker": "Index.html",
               "ToolTip": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Index.html",
               "RelativeToolTip": "Index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-08-29T14:47:26.449Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
