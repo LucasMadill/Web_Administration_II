@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\BIOs\\Madill_BIO.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BIOs\\Madill_BIO.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Character Sheet 1.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Character Sheet 1.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Character Sheet 1.html",
+              "DocumentMoniker": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Character Sheet 1.html",
+              "RelativeDocumentMoniker": "Character Sheet 1.html",
+              "ToolTip": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Character Sheet 1.html",
+              "RelativeToolTip": "Character Sheet 1.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-08T15:28:26.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Madill_BIO.html",
               "DocumentMoniker": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\BIOs\\Madill_BIO.html",
               "RelativeDocumentMoniker": "BIOs\\Madill_BIO.html",
@@ -34,17 +51,18 @@
               "RelativeToolTip": "BIOs\\Madill_BIO.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-29T15:54:08.163Z"
+              "WhenOpened": "2025-08-29T15:54:08.163Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.html",
               "DocumentMoniker": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Index.html",
               "RelativeDocumentMoniker": "Index.html",
               "ToolTip": "C:\\Users\\Lucas\\source\\repos\\LucasMadill\\Web_Administration_II\\Index.html",
               "RelativeToolTip": "Index.html",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-08-29T14:47:26.449Z",
               "EditorCaption": ""
