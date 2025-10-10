@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>The Volition of Kind Style Sheet</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        float: left;
+        border-right: 1px solid #bbbbbb;
+      }
+      li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+    </style>
   </head>
   <body>
   </body>
