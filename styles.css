@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   display: block;
   color: white;
@@ -11,7 +10,6 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
-
 header {  
   background: light-blue;
   position: fixed;
@@ -21,11 +19,11 @@ header {
   color: white;
   padding: 1px;
 }
-
 main {
-  top: 75px;
+  top: 100px;
 }
-
+footer {
+}
 div {
   vertical-align: baseline;
   margin: 0px;
@@ -49,7 +47,6 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-
 .navigation-frame {
   height: 75px;
   display: flex;
