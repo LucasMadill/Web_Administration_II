@@ -27,10 +27,13 @@ li a {
   background-color: #dddddd;
 }
 .header-cell {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  z-index: 99999;
+  padding: 0px;
 }
 .navigation-frame {
   display: flex;
