@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: block;
   color: white;
@@ -10,9 +11,21 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
+
+header {  
+  background: light-blue;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  padding: 0px;
+}
+
 main {
   top: 75px;
 }
+
 div {
   vertical-align: baseline;
   margin: 0px;
@@ -36,16 +49,7 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-.header-cell {  
-  background: light-blue;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  color: white;
-  z-index: 99999;
-  padding: 0px;
-}
+
 .navigation-frame {
   height: 75px;
   display: flex;
