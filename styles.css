@@ -46,6 +46,10 @@ li a {
   padding-top: 7px;
   padding-bottom: 0.69px;
 }
+.header-right {
+  display: flex;
+  align-items: center;
+}
 .text-box {
   width: 370px;
   height: auto;
