@@ -12,6 +12,7 @@ div {
   padding: 0px;
   border-width: 0px;
   unicode-bidi: isolate;
+  box-sizing: border-box;
 }
 ul {
   background-color: orange;
