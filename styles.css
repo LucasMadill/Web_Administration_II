@@ -1,33 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>The Volition of Kind Style Sheet</title>
-    <style>
-      body {
-        color: white;
-        text-align: center;
-        background-image: url("Theme_background.jpg");
-        background-position: center;
-        background-attachment: fixed;
-        margin: 0;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        float: left;
-        border-right: 1px solid #bbbbbb;
-      }
-      li a {
-        display: block;
-        padding: 8px;
-        background-color: #dddddd;
-      }
-    </style>
-  </head>
-  <body>
-  </body>
-</html>
+body {
+  color: white;
+  text-align: center;
+  background-image: url("Theme_background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
