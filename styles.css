@@ -29,6 +29,7 @@ li a {
   background-color: #dddddd;
 }
 .header-cell {
+  background: light-blue;
   position: fixed;
   top: 0px;
   left: 0px;
