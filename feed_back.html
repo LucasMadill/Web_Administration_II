@@ -6,19 +6,27 @@
 	<link rel="stylesheet" type="text/css" href ="styles.css">
   </head>
   <body>
-    <section>
-		  <ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="contact_us.html">Contact Us</a></li>
-			  <li><a href="biography_madill.html">Madill Biography</a></li>
-			  <li><a href="feed_back.html">Feed Back</a></li>
-		  </ul>	
-    </section>
-	<section>
-		<br>
-		<br>
-		<h1>Provide Feed Back</h1>
-		<form action="http://www.deitel.com" method="post">
+    <header class="header-cell">
+		<div class="navigation-frame">
+			<div class="logo">
+					<a href="https://restoringacres.com"><img alt="Restoring Acres" height="82" src="Restoring_Acres_Logo_Final.png"></a>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+					<li><a href="biography_madill.html">Madill Biography</a></li>
+					<li><a href="feed_back.html">Feed Back</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<br>
+			<br>
+			<h1>Provide Feed Back</h1>
+			<form action="http://www.deitel.com" method="post">
 			<input type="hidden" name="recipient" value="deitel@deitel.com">
 			<input type="hidden" name="subject" value="Feedback Form">
 			<input type="hidden" name="redirect" value="main.html">
@@ -68,6 +76,8 @@
 			<input type="submit" value="Submit">
 			<input type="reset" value="Reset">
 		</form>
-	</section>
+	</section>		
+	</main>
+	
   </body>
 </html>
