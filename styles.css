@@ -39,10 +39,6 @@ section {
 table, th, td {
 	border: 1px solid black;
 }
-.table-container {
-	display: flex;
-	justify-content: center;
-}
 ul {
   background-color: orange;
   list-style-type: none;
@@ -78,4 +74,8 @@ li a {
 .header-right {
   display: flex;
   align-items: center;
+}
+.table-container {
+	display: flex;
+	justify-content: center;
 }
