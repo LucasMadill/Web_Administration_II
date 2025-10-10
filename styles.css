@@ -8,6 +8,8 @@ body {
 }
 div {
   vertical-align: baseline;
+  margin: 0px;
+  padding: 0px;
   border-width: 0px;
 }
 ul {
