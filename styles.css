@@ -36,6 +36,13 @@ section {
   padding: 25px;
   borderwidth: 10px;
 }
+table, th, td {
+	border: 1px solid black;
+}
+.table-container {
+	display: flex;
+	justify-content: center;
+}
 ul {
   background-color: orange;
   list-style-type: none;
