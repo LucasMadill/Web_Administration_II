@@ -51,6 +51,11 @@ li {
   border-right: 1px solid #bbbbbb;
   background-color: #27B0F5;
 }
+li:hover {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+  background-color: #eeeeee;
+}
 li a {
   display: block;
   padding: 8px;
