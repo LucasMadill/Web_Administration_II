@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  display: block;
   color: white;
   text-align: center;
   background-image: url("Theme_background.jpg");
