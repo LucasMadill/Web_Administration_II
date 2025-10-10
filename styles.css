@@ -21,7 +21,7 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-.main-frame {
+.navigation-frame {
   display: flex;
   justify-content: center;
   margin-top: 40px;
