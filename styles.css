@@ -55,16 +55,3 @@ li a {
   display: flex;
   align-items: center;
 }
-.text-box {
-  width: 370px;
-  height: auto;
-  border: 4px;
-  border-style: solid;
-  border-color: #00ff00;
-  backgroupd-color: black;
-  padding: 20px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-item: center;
-}
