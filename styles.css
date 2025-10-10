@@ -22,11 +22,16 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-.navigation-frame {
+.header-cell {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   gap: 0;
+}
+.logo {
+  max-width: 172px;
+  padding-top: 7px;
+  padding-bottom: 0.69px;
 }
 .text-box {
   width: 370px;
