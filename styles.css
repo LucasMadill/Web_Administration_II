@@ -10,6 +10,9 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
+main {
+  top: 75px;
+}
 div {
   vertical-align: baseline;
   margin: 0px;
