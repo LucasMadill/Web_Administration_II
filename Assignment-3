@@ -9,7 +9,31 @@ sports-car list, it must be red. All the styles must be in a document style shee
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" type"text/css" href="styles.css">
 </head>
 <body>
+  <div>
+    <ol>
+      <li>Compact</li>
+        <ul>
+          <li>Escape</li>
+          <li>Trax</li>
+          <li>Corolla</li>
+        </ul>
+      <li>Midsize</li>
+        <ul>
+          <li>Explorer</li>
+          <li>Blazer</li>
+          <li>Camry</li>
+        </ul>
+      <li>Sports</li>
+        <ul>
+          <li>Exepdition</li>
+          <li>Tahoe</li>
+          <li>Crown</li>
+        </ul>
+    </ol>
+  </div>
 </body>
 </html>
