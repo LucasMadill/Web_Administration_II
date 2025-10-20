@@ -1,10 +1,3 @@
-*/ Question 1: Create and test an HTML document that describes nested ordered lists of cars. The outer list must have three 
-entries: compact, midsize, and sports. Inside each of these three lists, there must be two sublists of body styles. The 
-compact- and midsize-car sublists are two-door and four-door; the sports-car sublists are coupe and convertible. Each body-style
-sublist must have at least three entries, each of which is the make and model of a particular car that fits the category. The 
-outer list must use uppercase Roman numerals, the middle lists must use uppercase letters, and the inner lists must use Arabic 
-numerals. The background color for the compact-car list must be pink; for the midsize-car list, it must be blue; for the 
-sports-car list, it must be red. All the styles must be in a document style sheet. (30 points) */
 <!doctype html>
 <html lang="en-us">
 <head>
@@ -16,23 +9,23 @@ sports-car list, it must be red. All the styles must be in a document style shee
   <div>
     <ol>
       <li>Compact</li>
-        <ul>
+        <ol>
           <li>Escape</li>
           <li>Trax</li>
           <li>Corolla</li>
-        </ul>
+        </ol>
       <li>Midsize</li>
-        <ul>
+        <ol>
           <li>Explorer</li>
           <li>Blazer</li>
           <li>Camry</li>
-        </ul>
+        </ol>
       <li>Sports</li>
-        <ul>
+        <ol>
           <li>Exepdition</li>
           <li>Tahoe</li>
           <li>Crown</li>
-        </ul>
+        </ol>
     </ol>
   </div>
 </body>
