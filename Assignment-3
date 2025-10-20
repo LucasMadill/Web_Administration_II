@@ -6,8 +6,9 @@ outer list must use uppercase Roman numerals, the middle lists must use uppercas
 numerals. The background color for the compact-car list must be pink; for the midsize-car list, it must be blue; for the 
 sports-car list, it must be red. All the styles must be in a document style sheet. (30 points) */
 <!doctype html>
-<html>
+<html lang="en-us">
 <head>
+  <meta charset="UTF-8">
 </head>
 <body>
 </body>
