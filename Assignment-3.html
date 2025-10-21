@@ -69,12 +69,12 @@
     <div id="table1"> </div>
     <script>
       var employeeData=[];      
-      for(var i=1; i < 3; i++) {
-        var name=prompt("Employee Name: ");
-        var payRate=prompt("Pay Rate: ");
-        var hoursWorked=prompt("Hours Worked: ");
-        employeeData[i-1].push({Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
-      }
+      var name=prompt("Employee Name: ");
+      var payRate=prompt("Pay Rate: ");
+      var hoursWorked=prompt("Hours Worked: ");
+      const employee1={Name: name, PayRate: payRate, HoursWorked: hoursWorked)
+      const container = document.getElementById("table1");
+      container.appendChild(createTable(employee1));
       
       // Function to create a table
       /*function createTable(employeeData){
