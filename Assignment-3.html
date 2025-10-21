@@ -63,9 +63,9 @@
     </ol>
   </div>
     <h1>Question 2</h1>
-    <div id="table1"> </div>
-    <div id="table2"> </div>
-    <div id="table2"> </div>
+    <div id="table1"> </div><br>
+    <div id="table2"> </div><br>
+    <div id="table3"> </div><br>
     <script>      
       for(var i=0; i<3; i++){
         var name=prompt("Employee Name: ");
@@ -78,7 +78,7 @@
         else
           var grossPay = payRate * hoursWorked;
         
-        let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
+        let message="Name: " + name + " Pay Rate: " + payRate + " Hours Worked: " + hoursWorked + " Gross Pay: " + grossPay;
         let tableNum = "table" + (i+1);
         document.getElementById(tableNum).innerHTML = message;
       }
