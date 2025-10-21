@@ -86,58 +86,20 @@
         document.getElementById(tableNum).innerHTML = message;
       }
       //Question 3 - Part 1 Answer
-      const ofSquareRootAndCubes = [
-        {Number: 5, SquareRoot: 5*5, Cubed: 5*5*5},
-        {Number: 6, SquareRoot: 6*6, Cubed: 6*6*6},
-        {Number: 7, SquareRoot: 7*7, Cubed: 7*7*7},
-        {Number: 8, SquareRoot: 8*8, Cubed: 8*8*8},
-        {Number: 9, SquareRoot: 9*9, Cubed: 9*9*9},
-        {Number: 10, SquareRoot: 10*10, Cubed: 10*10*10},
-        {Number: 11, SquareRoot: 11*11, Cubed: 11*11*11},
-        {Number: 12, SquareRoot: 12*12, Cubed: 12*12*12},
-        {Number: 13, SquareRoot: 13*13, Cubed: 13*13*13},
-        {Number: 14, SquareRoot: 14*14, Cubed: 14*14*14},
-        {Number: 15, SquareRoot: 15*15, Cubed: 15*15*15}
+      const ofSquareRootAndCubes=[
+        {Number: 5, SquareRoot: Math.pow(5,2), Cubed: Math.pow(5,3)},
+        {Number: 6, SquareRoot: Math.pow(6,2), Cubed: Math.pow(6,3)},
+        {Number: 7, SquareRoot: Math.pow(7,2), Cubed: Math.pow(7,3)},
+        {Number: 8, SquareRoot: Math.pow(8,2), Cubed: Math.pow(8,3)},
+        {Number: 9, SquareRoot: Math.pow(9,2), Cubed: Math.pow(9,3)},
+        {Number: 10, SquareRoot: Math.pow(10,2), Cubed: Math.pow(10,3)},
+        {Number: 11, SquareRoot: Math.pow(11,2), Cubed: Math.pow(11,3)},
+        {Number: 12, SquareRoot: Math.pow(12,2), Cubed: Math.pow(12,3)},
+        {Number: 13, SquareRoot: Math.pow(13,2), Cubed: Math.pow(13,3)},
+        {Number: 14, SquareRoot: Math.pow(14,2), Cubed: Math.pow(14,3)},
+        {Number: 15, SquareRoot: Math.pow(15,2), Cubed: Math.pow(15,3)}
         ];
-      //Function to create a table
-      function createTable(myArray){
-        const table = document.createElement("table");
-        table.border = "1";
-        table.style.borderCollapse = "collapse";
-        table.style.width = "100%";
-
-        // Create table header
-        const thead = document.createElement("thead");
-        const headerRow = document.createElement("tr");
-        Object.keys(myArray[0]).forEach(key => {
-          const th = document.createElement("th");
-          th.textContent = key;
-          th.style.padding = "8px";
-          th.style.backgroundColor = "#f2f2f2";
-          headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
-
-        // Create table body
-        const tbody = document.createElement("tbody");
-        myArray.forEach(row => {
-          const tr = document.createElement("tr");
-          Object.values(row).forEach(value => {
-            const td = document.createElement("td");
-            td.textContent = value;
-            td.style.padding = "8px";
-            tr.appendChild(td);
-          });
-          tbody.appendChild(tr);
-        });
-        table.appendChild(tbody);
-
-        alert(table);
-      }
-      // Send the table to an Alert
-      }
-      createTable(ofSquareRootAndCubes);
+      alert(ofSquareRootandCubes);
     </script>
   </div>
 </body>
