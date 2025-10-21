@@ -88,7 +88,7 @@
   <div>
     <h1>Question 3</h1>
     <h2>Part 1:</h2>
-    <div id="Table4"> </div>
+    <button onclick="showAlert()">Click me</button>
     <script>
       const ofSquareRootAndCubes = [
         {Number: 5, SquareRoot: 5*5, Cubed: 5*5*5},
@@ -101,10 +101,10 @@
         {Number: 12, SquareRoot: 12*12, Cubed: 12*12*12},
         {Number: 13, SquareRoot: 13*13, Cubed: 13*13*13},
         {Number: 14, SquareRoot: 14*14, Cubed: 14*14*14},
-        {Number: 15, SquareRoot: 15*15, Cubed: 15*15*15},
+        {Number: 15, SquareRoot: 15*15, Cubed: 15*15*15}
         ];
       //Function to create a table
-      function createTable(ofSquareRootAndCubes){
+      function createTable(myArray){
         const table = document.createElement("table");
         table.border = "1";
         table.style.borderCollapse = "collapse";
@@ -113,7 +113,7 @@
         // Create table header
         const thead = document.createElement("thead");
         const headerRow = document.createElement("tr");
-        Object.keys(ofSquareRootAndCubes[0]).forEach(key => {
+        Object.keys(myArray[0]).forEach(key => {
           const th = document.createElement("th");
           th.textContent = key;
           th.style.padding = "8px";
@@ -125,7 +125,7 @@
 
         // Create table body
         const tbody = document.createElement("tbody");
-        ofSquareRootAndCubes.forEach(row => {
+        myArray.forEach(row => {
           const tr = document.createElement("tr");
           Object.values(row).forEach(value => {
             const td = document.createElement("td");
@@ -140,7 +140,9 @@
         return table;
       }
       // Send the table to an Alert
-      Alert(createTable(ofSquareRootAndCubes);
+      function showAlert() {
+        Alert(createTable(ofSquareRootAndCubes);
+      }
     </script>
   </div>       
 </body>
