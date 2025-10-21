@@ -64,34 +64,22 @@
   </div>
   <div>
     <h1>Question 2</h1>
-    <form action = "Script Url" method ="">
-      <h1>Employee One</h1>
-      <label for="Full-Name1">Full Name:</label><br>
-      <input type="text" id="Full-Name1" name="Full-Name1"><br>
-      <label for="Pay-Rate">Pay Rate:</label><br>
-      <input type="text" id="Pay-Rate1" name="Pay-Rate1"><br>
-      <label for="Hours-Worked">Hours Worked:</label><br>
-      <input type="text" id="Hours-Worked1" name="Hours-Worked1"><br>
-      <button onclick=calculateGrossPay(let FullName1="Full-Name1")>Submit</button>
-      <Input type="reset" Value="Reset">
-      //<h1>Employee Two</h1>
-      //<label for="Full-Name2">Full Name:</label><br>
-      //<input type="text" id="Full-Name2" name="Full-Name2"><br>
-      //<label for="Pay-Rate2">Pay Rate:</label><br>
-      //<input type="text" id="Pay-Rate2" name="Pay-Rate2"><br>
-      //<label for="Hours-Worked2">Hours Worked:</label><br>
-      //<input type="text" id="Hours-Worked2" name="Hours-Worked2"><br>
-      //<h1>Employee Three</h1>
-      //<label for="Full-Name3">Full Name:</label><br>
-      //<input type="text" id="Full-Name3" name="Full-Name3"><br>
-      //<label for="Pay-Rate3">Pay Rate:</label><br>
-      //<input type="text" id="Pay-Rate3" name="Pay-Rate3"><br>
-      //<label for="Hours-Worked3">Hours Worked:</label><br>
-      //<input type="text" id="Hours-Worked3" name="Hours-Worked3"><br><br>      
-    </form>
+    <p>Employee One: Lucas Madill Pay Rate: $12.43 Hours Worked: 39</p><br>
+    <p>Employee Two: Lydia Madill Pay Rate: $15.43 Hours Worked: 59</p><br>
+    <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
+    <button type="button" onclick="calculateGrossPay()">
     <script >
-      function calculateGrossPay(FullName1){
-        document.write(FullName1);
+      function caculateGrossPay(){
+      let employee[0] = "Lucas Madill";
+      let payRate[0] = 12.43;
+      let hoursWorked[0] = 39;
+      let employee[1] = "Lydia Madill";
+      let payRate[1] = 15.43;
+      let hoursWorked[1] = 59;
+      let employee[2] = "Jon Madill";
+      let payRate[2] = 15.43;
+      let hoursWorked[2] = 8;
+      document.write(employee[0]);
       }
     </script>
   </div>
