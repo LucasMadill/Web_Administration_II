@@ -78,7 +78,7 @@
           let grossPay = payRate * 1.5 * (hoursWorked -40)
         else
           let grossPay = payRate * hoursWorked
-        employeeData.push({Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
+        employeeData.push({id: i-1, Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
       }
       
       // Function to create a table
