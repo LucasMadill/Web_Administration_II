@@ -70,15 +70,15 @@
     <script>
       let employeeData=[];      
       for(var i=1; i < 3; i++) {
-        let name=prompt("Employee " + i + "Name:");
-        let payRate=prompt("Pay Rate:");
-        let hoursWorked=prompt("Hours Worked:");
+        let name=prompt("Employee Name: ");
+        let payRate=prompt("Pay Rate: ");
+        let hoursWorked=prompt("Hours Worked: ");
         if (hoursWorked >40)
           let grossPay = payRate * 1.5 * (hoursWorked -40);
         else
           let grossPay = payRate * hoursWorked;
         var j = 0;
-        employeeData.push({id: , Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
+        employeeData.push({id: j, Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
         J += 1;
       }
       
