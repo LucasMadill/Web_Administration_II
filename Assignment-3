@@ -4,27 +4,69 @@
   <meta charset="UTF-8">
   <title>Assignment 3</title>
   <link rel="stylesheet" type"text/css" href="styles.css">
+  <style>
+  .outer {
+    list-style-type: "I";
+  }
+  .middle {
+    list-style-type: "A";
+  }
+  .inner {
+    list-style-type: arabic-indic;
+  }
 </head>
 <body>
   <div>
-    <ol>
+    <ol class="outer">
       <li>Compact</li>
-        <ol>
-          <li>Escape</li>
-          <li>Trax</li>
-          <li>Corolla</li>
+        <ol class="middle">
+          <li>two-door</li>
+            <ol class="inner">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          <li>four-door</li>
+            <ol class="inner">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
         </ol>
       <li>Midsize</li>
-        <ol>
-          <li>Explorer</li>
-          <li>Blazer</li>
-          <li>Camry</li>
+        <ol class="middle">
+          <li>two-door</li>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          <li>four-door</li>
+             <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
         </ol>
       <li>Sports</li>
-        <ol>
-          <li>Exepdition</li>
-          <li>Tahoe</li>
-          <li>Crown</li>
+        <ol class="middle">
+          <li>coupe</li>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          <li>convertible</li>
+             <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
         </ol>
     </ol>
   </div>
