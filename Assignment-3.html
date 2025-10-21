@@ -69,10 +69,12 @@
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
     <div id="Table1"> </div>
     <script>
-      const EmployeeData=[{Name: "Lucas Madill", PayRate: 12.43, HoursWorked:39},
-                          {Name: "Lyida Madill", PayRate: 15.43, HoursWorked:59},
-                          {Name: "Jon Madill", PayRate: 21.68, HoursWorked:8}];
-      function createTable{EmployeeData){
+      const employeeData=[
+        {Name: "Lucas Madill", PayRate: 12.43, HoursWorked:39},
+        {Name: "Lyida Madill", PayRate: 15.43, HoursWorked:59},
+        {Name: "Jon Madill", PayRate: 21.68, HoursWorked:8}
+      ];
+      function createTable{employeeData){
         const table = document.createElement("table");
         table.border = "1";
         table.style.borderCollapse = "collapse";
@@ -81,7 +83,7 @@
         // Create table header
         const thread = document.createElement("thead");
         const headerRow = document.createElement("tr");
-        Object.keys(EmployeeData[0]).forEach(Key => {
+        Object.keys(employeeData[0]).forEach(key => {
           const th = document.createElement("th");
           th.textContent = key;
           th.style.padding = "8px";
@@ -93,17 +95,19 @@
 
         // Create table body
         const tbody = document.createElement("tbody");
-        EmployeeData.forEach(row => {
+        employeeData.forEach(row => {
           const tr = document.createElement("tr");
-          Object.values(row.forEach(value => {
+          Object.values(row).forEach(value => {
             const td = document.createElement("td");
             td.textContent = value;
             td.style.padding = "8px";
             tr.appendChild(td);
           });
-          table.appendChild(tbody);
+          tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
 
-          return table;
+        return table;
       }
       // Apend the table to the container
       const container = document.getElementById("Table1");
