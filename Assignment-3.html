@@ -72,36 +72,26 @@
       <input type="text" id="Pay-Rate1" name="Pay-Rate1"><br>
       <label for="Hours-Worked">Hours Worked:</label><br>
       <input type="text" id="Hours-Worked1" name="Hours-Worked1"><br>
-      <h1>Employee Two</h1>
-      <label for="Full-Name2">Full Name:</label><br>
-      <input type="text" id="Full-Name2" name="Full-Name2"><br>
-      <label for="Pay-Rate2">Pay Rate:</label><br>
-      <input type="text" id="Pay-Rate2" name="Pay-Rate2"><br>
-      <label for="Hours-Worked2">Hours Worked:</label><br>
-      <input type="text" id="Hours-Worked2" name="Hours-Worked2"><br>
-      <h1>Employee Three</h1>
-      <label for="Full-Name3">Full Name:</label><br>
-      <input type="text" id="Full-Name3" name="Full-Name3"><br>
-      <label for="Pay-Rate3">Pay Rate:</label><br>
-      <input type="text" id="Pay-Rate3" name="Pay-Rate3"><br>
-      <label for="Hours-Worked3">Hours Worked:</label><br>
-      <input type="text" id="Hours-Worked3" name="Hours-Worked3"><br><br>
-      <button onclick="calculateGrossPay()">Submit</button>
+      <button onclick=calculateGrossPay(let FullName1="Full-Name1")>Submit</button>
       <Input type="reset" Value="Reset">
+      //<h1>Employee Two</h1>
+      //<label for="Full-Name2">Full Name:</label><br>
+      //<input type="text" id="Full-Name2" name="Full-Name2"><br>
+      //<label for="Pay-Rate2">Pay Rate:</label><br>
+      //<input type="text" id="Pay-Rate2" name="Pay-Rate2"><br>
+      //<label for="Hours-Worked2">Hours Worked:</label><br>
+      //<input type="text" id="Hours-Worked2" name="Hours-Worked2"><br>
+      //<h1>Employee Three</h1>
+      //<label for="Full-Name3">Full Name:</label><br>
+      //<input type="text" id="Full-Name3" name="Full-Name3"><br>
+      //<label for="Pay-Rate3">Pay Rate:</label><br>
+      //<input type="text" id="Pay-Rate3" name="Pay-Rate3"><br>
+      //<label for="Hours-Worked3">Hours Worked:</label><br>
+      //<input type="text" id="Hours-Worked3" name="Hours-Worked3"><br><br>      
     </form>
-    <div class="EmployeeOne">
-    </div>
-    <div class="EmployeeTwo">
-    </div>
-    <div class="EmployeeThree">
     <script >
-      function calculateGrossPay(){
-        let FullName1 = document.getElementById("Full-Name1");
-        let PayRate1 = document.getElementById("Pay-Rate1");
-        let HoursWorked1 = document.getElementById("Hours-Worked1");
+      function calculateGrossPay(FullName1){
         document.write(FullName1);
-        document.write(PayRate1);
-        document.write(HoursWorked1);
       }
     </script>
   </div>
