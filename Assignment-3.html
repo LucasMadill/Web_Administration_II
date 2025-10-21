@@ -62,7 +62,6 @@
         </div>
     </ol>
   </div>
-  <div>
     <h1>Question 2</h1>
     <p>Employee One: Lucas Madill Pay Rate: $12.43 Hours Worked: 39</p><br>
     <p>Employee Two: Lydia Madill Pay Rate: $15.43 Hours Worked: 59</p><br>
@@ -89,7 +88,7 @@
           const th = document.createElement("th");
           th.textContent = key;
           th.style.padding = "8px";
-          th.style.backgroundColor = gray;
+          th.style.backgroundColor = "#f2f2f2";
           headerRow.appendChild(th);
         });
         thead.appendChild(headerRow);
@@ -115,6 +114,5 @@
       const container = document.getElementById("table1");
       container.appendChild(createTable(employeeData));      
     </script>    
-  </div>
 </body>
 </html>
