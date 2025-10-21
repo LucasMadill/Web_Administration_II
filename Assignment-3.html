@@ -63,22 +63,21 @@
     </ol>
   </div>
     <h1>Question 2</h1>
-    <p>Employee One: Lucas Madill Pay Rate: $12.43 Hours Worked: 39</p><br>
-    <p>Employee Two: Lydia Madill Pay Rate: $15.43 Hours Worked: 59</p><br>
-    <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
     <div id="table1"> </div>
     <script>
-      var name=prompt("Employee Name: ");
-      var payRate=prompt("Pay Rate: ");
-      var hoursWorked=prompt("Hours Worked: ");
-      if (hoursWorked >40){
-        const overtimeHours = hoursWorked - 40;
-        var grossPay = (40 * payRate) + (overTimeHours * 1.5 * payRate);
+      for(var i=0; i<3; i++){
+        var name=prompt("Employee Name: ");
+        var payRate=prompt("Pay Rate: ");
+        var hoursWorked=prompt("Hours Worked: ");
+        if (hoursWorked >40){
+          const overtimeHours = hoursWorked - 40;
+          var grossPay = (40 * payRate) + (overTimeHours * 1.5 * payRate);
+        }
+        else
+          var grossPay = payRate * hoursWorked;
+        let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
+        document.getElementById("table1").innerHTML=message;
       }
-      else
-        var grossPay = payRate * hoursWorked;
-      let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
-      document.getElementById("table1").innerHTML=message;
       // Function to create a table
       /*function createTable(employeeData){
         const table = document.createElement("table");
