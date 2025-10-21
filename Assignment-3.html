@@ -68,20 +68,9 @@
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
     <div id="table1"> </div>
     <script>
-      const key1 = "Name:";
-      const key2 = "Pay Rate:";
-      const key3 = "Hours Worked";
       var name=prompt("Employee Name: ");
       var payRate=prompt("Pay Rate: ");
-      var hoursWorked=prompt("Hours Worked: ");
-      const employee1 = {
-        [key1]: name,
-        [key2]: payRate,
-        [key3]: hoursWorked,
-      };
-      const objectAsString = JSON.stringify(employee1, null, 2);
-      document.getElementById("table1").innerHTML = <pre>${objectAsString},</pre>;
-         
+      var hoursWorked=prompt("Hours Worked: ");         
       // Function to create a table
       /*function createTable(employeeData){
         const table = document.createElement("table");
