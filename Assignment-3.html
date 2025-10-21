@@ -67,12 +67,18 @@
     <p>Employee One: Lucas Madill Pay Rate: $12.43 Hours Worked: 39</p><br>
     <p>Employee Two: Lydia Madill Pay Rate: $15.43 Hours Worked: 59</p><br>
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
-    <p id="Table1"> </p>
+    <table id="Table1"> </table>
     <script>
-      const Employee1={fullName:"Lucas Madill",payRate:"12.43",hoursWorked:"39"};
-      const Employee2={fullName:"Lydia Madill",payRate:"15.43",hoursWorked:"59"};
-      const Employee3={fullName:"Jon Madill",payRate:"21.68",hoursWorked:"8"};
-      document.write(Employee1);
+      const employees=['Lucas Madill','Lydia Madill','Jon Madill'];
+      const payRate=['12.43','15.43','21.68'];
+      const hoursWorked=['39','59','8'];
+      const table = document.getElementByID('table1');
+      const tr = document.createElement('tr');
+      employees.forEach(item => {
+        const th= document.createElement('th');
+        th.textContent = item;
+        th.appendChild(th);
+      });
     </script>    
   </div>
 </body>
