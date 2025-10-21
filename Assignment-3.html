@@ -64,19 +64,22 @@
   </div>
     <h1>Question 2</h1>
     <div id="table1"> </div>
-    <script>
+    <script>      
       for(var i=0; i<3; i++){
         var name=prompt("Employee Name: ");
         var payRate=prompt("Pay Rate: ");
         var hoursWorked=prompt("Hours Worked: ");
         if (hoursWorked >40){
-          const overtimeHours = hoursWorked - 40;
+          const overTimeHours = hoursWorked - 40;
           var grossPay = (40 * payRate) + (overTimeHours * 1.5 * payRate);
         }
         else
           var grossPay = payRate * hoursWorked;
+        
         let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
-        document.getElementById("table1").innerHTML=message;
+        
+        const container = document.getElementById("table1");
+        container.appendChild(message);
       }
       // Function to create a table
       /*function createTable(employeeData){
