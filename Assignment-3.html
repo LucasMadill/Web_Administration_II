@@ -70,7 +70,15 @@
     <script>
       var name=prompt("Employee Name: ");
       var payRate=prompt("Pay Rate: ");
-      var hoursWorked=prompt("Hours Worked: ");         
+      var hoursWorked=prompt("Hours Worked: ");
+      if (hoursWorked >40){
+        const overtimeHours = hoursWorked - 40;
+        var grossPay = (40 * payRate) + (overTimeHours * 1.5 * payRate);
+      }
+      else
+        var grossPay = payRate * hoursWorked;
+      let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
+      document.getElementById("table1").innerHTML=message;
       // Function to create a table
       /*function createTable(employeeData){
         const table = document.createElement("table");
