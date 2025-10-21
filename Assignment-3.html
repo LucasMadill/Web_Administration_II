@@ -68,19 +68,19 @@
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
     <div id="table1"> </div>
     <script>
-      //let employeeData=[];      
-      //for(var i=1; i < 3; i++) {
+      const employeeData=[];      
+      for(var i=1; i < 3; i++) {
         var name=prompt("Employee Name: ");
         var payRate=prompt("Pay Rate: ");
         var hoursWorked=prompt("Hours Worked: ");
-        //if (hoursWorked >40)
-          //let grossPay = payRate * 1.5 * (hoursWorked -40);
-        //else
-          //let grossPay = payRate * hoursWorked;
-        //var j = 0;
-        //employeeData.push({id: j, Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
-        //J += 1;
-      //}
+        if (hoursWorked >40)
+          var grossPay = payRate * 1.5 * (hoursWorked -40);
+        else
+          var grossPay = payRate * hoursWorked;
+        var j = 0;
+        employeeData.push({id: j, Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
+        J += 1;
+      }
       
       // Function to create a table
       /*function createTable(employeeData){
