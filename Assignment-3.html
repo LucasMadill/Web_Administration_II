@@ -71,13 +71,13 @@
       let employeeData = [];
       let employeeData = new Array(3);
       for(i=1; i < 3; i++) {
-        let name = prompt("Employee " + i + "Name:")
-        let payRate = prompt("Pay Rate:")
-        let hoursWorked = prompt("Hours Worked:")
+        let name = prompt("Employee " + i + "Name:");
+        let payRate = prompt("Pay Rate:");
+        let hoursWorked = prompt("Hours Worked:");
         if (hoursWorked >40)
-          let grossPay = payRate * 1.5 * (hoursWorked -40)
+          let grossPay = payRate * 1.5 * (hoursWorked -40);
         else
-          let grossPay = payRate * hoursWorked
+          let grossPay = payRate * hoursWorked;
         employeeData.push({id: i-1, Name: name, PayRate: payRate, HoursWorked: hoursWorked, GrossPay: grossPay});
       }
       
