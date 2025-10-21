@@ -69,16 +69,45 @@
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
     <table id="Table1"> </table>
     <script>
-      const employees=['Lucas Madill','Lydia Madill','Jon Madill'];
-      const payRate=['12.43','15.43','21.68'];
-      const hoursWorked=['39','59','8'];
-      const table = document.getElementByID('table1');
-      const tr = document.createElement('tr');
-      employees.forEach(item => {
-        const th= document.createElement('th');
-        th.textContent = item;
-        th.appendChild(th);
-      });
+      const EmployeeData=[{Name: "Lucas Madill", PayRate: 12.43, HoursWorked:39},
+                          {Name: "Lyida Madill", PayRate: 15.43, HoursWorked:59},
+                          {Name: "Jon Madill", PayRate: 21.68, HoursWorked:8}];
+      function createTable{EmployeeData){
+        const table = document.createElement("table");
+        table.border = "1";
+        table.style.borderCollapse = "collapse";
+        table.style.width = "100%";
+
+        // Create table header
+        const thread = document.createElement("thead");
+        const headerRow = document.createElement("tr");
+        Object.keys(EmployeeData[0]).forEach(Key => {
+          const th = document.createElement("th");
+          th.textContent = key;
+          th.style.padding = "8px";
+          th.style.backgroundColor = gray;
+          headerRow.appendChild(th);
+        }J);
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        // Create table body
+        const tbody = document.createElement("tbody");
+        EmployeeData.forEach(row => {
+          const tr = document.createElement("tr");
+          Object.values(row.forEach(value => {
+            const td = document.createElement("td");
+            td.textContent = value;
+            td.style.padding = "8px";
+            tr.appendChild(td);
+          });
+          table.appendChild(tbody);
+
+          return table;
+      }
+      // Apend the table to the container
+      const container = document.getElementById("table1");
+      container.appendChild(createTable(EmployeeData));      
     </script>    
   </div>
 </body>
