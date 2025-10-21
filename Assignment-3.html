@@ -64,6 +64,8 @@
   </div>
     <h1>Question 2</h1>
     <div id="table1"> </div>
+    <div id="table2"> </div>
+    <div id="table2"> </div>
     <script>      
       for(var i=0; i<3; i++){
         var name=prompt("Employee Name: ");
@@ -77,9 +79,8 @@
           var grossPay = payRate * hoursWorked;
         
         let message="Name: " + name + "Pay Rate: " + payRate + "Hours Worked: " + hoursWorked + "Gross Pay: " + grossPay;
-        
-        const container = document.getElementById("table1");
-        container.appendChild(message);
+        let tableNum = "table" + (i+1);
+        document.getElementById(tableNum).innerHTML = message;
       }
       // Function to create a table
       /*function createTable(employeeData){
