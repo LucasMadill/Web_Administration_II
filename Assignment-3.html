@@ -67,7 +67,7 @@
     <p>Employee One: Lucas Madill Pay Rate: $12.43 Hours Worked: 39</p><br>
     <p>Employee Two: Lydia Madill Pay Rate: $15.43 Hours Worked: 59</p><br>
     <p>Employee Three: Jon Madill Pay Rate: $21.68 Hours worked: 8</p><br>
-    <div id="Table1"> </div>
+    <div id="table1"> </div>
     <script>
       const employeeData=[
         {Name: "Lucas", PayRate: 12.43, HoursWorked:39},
@@ -83,7 +83,7 @@
         table.style.width = "100%";
 
         // Create table header
-        const thread = document.createElement("thead");
+        const thead = document.createElement("thead");
         const headerRow = document.createElement("tr");
         Object.keys(employeeData[0]).forEach(key => {
           const th = document.createElement("th");
@@ -112,7 +112,7 @@
         return table;
       }
       // Apend the table to the container
-      const container = document.getElementById("Table1");
+      const container = document.getElementById("table1");
       container.appendChild(createTable(employeeData));      
     </script>    
   </div>
