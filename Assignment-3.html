@@ -89,42 +89,26 @@
       <button onclick="calculateGrossPay()">Submit</button>
       <Input type="reset" Value="Reset">
     </form>
-    <div class="EmployOne">
+    <div class="EmployeeOne">
     </div>
-    <div class="EmployTwo">
+    <div class="EmployeeTwo">
     </div>
-    <div class="EmployThree">
-    </div>
-    <div class="Gross-Pay">
-      
-      <
-      <table>
-        
-      </table>
-    </div>
+    <div class="EmployeeThree">
     <script >
       function calculateGrossPay(){
         const FullName[0] = document.getElementById("Full-Name1");
-        const PayRate[0] = document.getElementByID("Pay-Rate1");
-        const HoursWorked[0] = document.getElementByID("Hours-Worked1");
+        const PayRate[0] = document.getElementById("Pay-Rate1");
+        const HoursWorked[0] = document.getElementById("Hours-Worked1");
         const FullName[1] = document.getElementById("Full-Name2");
         const PayRate[1] = document.getElementByID("Pay-Rate2");
         const HoursWorked[1] = document.getElementByID("Hours-Worked2");
         const FullName[2] = document.getElementById("Full-Name3");
         const PayRate[2] = document.getElementByID("Pay-Rate3");
         const HoursWorked[2] = document.getElementByID("Hours-Worked3");
-        document.getElementById("EmployOne").innerHTML=FullName[0]+" "+PayRate[0]+" "+HoursWorked[0];
-        document.getElementById("EmployTwo").innerHTML=FullName[1]+" "+PayRate[1]+" "+HoursWorked[1];
-        document.getElementById("EmployThree").innerHTML=FullName[2]+" "+PayRate[2]+" "+HoursWorked[2];
+        document.write(FullName[0]+" "+PayRate[0]+" "+HoursWorked[0]);
+        document.write(FullName[1]+" "+PayRate[1]+" "+HoursWorked[1]);
+        document.write(FullName[2]+" "+PayRate[2]+" "+HoursWorked[2]);
       }
-          
-        //for(i=0; i<3; i++)
-        //{
-          //if(HoursWorked[i] > 40)
-            //const GrossPay[i] = 
-          //else
-            //const GrossPay[i] = PayRate[i]*HoursWorked[i];
-        //}
     </script>
   </div>
 </body>
