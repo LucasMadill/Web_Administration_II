@@ -70,10 +70,11 @@
     <div id="Table1"> </div>
     <script>
       const employeeData=[
-        {Name: "Lucas Madill", PayRate: 12.43, HoursWorked:39},
-        {Name: "Lyida Madill", PayRate: 15.43, HoursWorked:59},
-        {Name: "Jon Madill", PayRate: 21.68, HoursWorked:8}
+        {Name: "Lucas", PayRate: 12.43, HoursWorked:39},
+        {Name: "Lyida", PayRate: 15.43, HoursWorked:59},
+        {Name: "Jon", PayRate: 21.68, HoursWorked:8}
       ];
+      
       // Function to create a table
       function createTable(employeeData){
         const table = document.createElement("table");
@@ -112,7 +113,7 @@
       }
       // Apend the table to the container
       const container = document.getElementById("Table1");
-      container.appendChild(createTable(EmployeeData));      
+      container.appendChild(createTable(employeeData));      
     </script>    
   </div>
 </body>
