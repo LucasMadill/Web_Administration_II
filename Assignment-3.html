@@ -62,6 +62,7 @@
         </div>
     </ol>
   </div>
+  <div>
     <h1>Question 2</h1>
     <div id="table1"> </div><br>
     <div id="table2"> </div><br>
@@ -82,8 +83,28 @@
         let tableNum = "table" + (i+1);
         document.getElementById(tableNum).innerHTML = message;
       }
-      // Function to create a table
-      /*function createTable(employeeData){
+    </script>
+  </div>
+  <div>
+    <h1>Question 3</h1>
+    <h2>Part 1:</h2>
+    <div id="Table4"> </div>
+    <script>
+      const ofSquareRootAndCubes = [
+        {Number: 5, SquareRoot: 5*5, Cubed: 5*5*5},
+        {Number: 6, SquareRoot: 6*6, Cubed: 6*6*6},
+        {Number: 7, SquareRoot: 7*7, Cubed: 7*7*7},
+        {Number: 8, SquareRoot: 8*8, Cubed: 8*8*8},
+        {Number: 9, SquareRoot: 9*9, Cubed: 9*9*9},
+        {Number: 10, SquareRoot: 10*10, Cubed: 10*10*10},
+        {Number: 11, SquareRoot: 11*11, Cubed: 11*11*11},
+        {Number: 12, SquareRoot: 12*12, Cubed: 12*12*12},
+        {Number: 13, SquareRoot: 13*13, Cubed: 13*13*13},
+        {Number: 14, SquareRoot: 14*14, Cubed: 14*14*14},
+        {Number: 15, SquareRoot: 15*15, Cubed: 15*15*15},
+        ];
+      //Function to create a table
+      function createTable(ofSquareRootAndCubes){
         const table = document.createElement("table");
         table.border = "1";
         table.style.borderCollapse = "collapse";
@@ -92,7 +113,7 @@
         // Create table header
         const thead = document.createElement("thead");
         const headerRow = document.createElement("tr");
-        Object.keys(employeeData[0]).forEach(key => {
+        Object.keys(ofSquareRootAndCubes[0]).forEach(key => {
           const th = document.createElement("th");
           th.textContent = key;
           th.style.padding = "8px";
@@ -104,7 +125,7 @@
 
         // Create table body
         const tbody = document.createElement("tbody");
-        employeeData.forEach(row => {
+        ofSquareRootAndCubes.forEach(row => {
           const tr = document.createElement("tr");
           Object.values(row).forEach(value => {
             const td = document.createElement("td");
@@ -118,9 +139,9 @@
 
         return table;
       }
-      // Apend the table to the container
-      const container = document.getElementById("table1");
-      container.appendChild(createTable(employeeData)); */
-    </script>    
+      // Send the table to an Alert
+      Alert(createTable(ofSquareRootAndCubes);
+    </script>
+  </div>       
 </body>
 </html>
