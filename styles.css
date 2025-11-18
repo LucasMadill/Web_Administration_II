@@ -1,6 +1,3 @@
-:root {
-  --color-background-header: #ffffff;
-}
 element.style {
   display: block;
 }
@@ -11,9 +8,6 @@ body {
   display: block;
   color: white;
   text-align: center;
-  background-image: url("Theme_background.jpg");
-  background-position: center;
-  background-attachment: fixed;
   margin: 0;
 }
 header {  
