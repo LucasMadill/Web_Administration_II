@@ -96,7 +96,6 @@ li a {
   max-width: 1360px;
   padding-inline-start: 40px;
   padding-inline-end: 40px;
-  fill: #ffffff;
 }
 .updates-bar {
   display: grid; 
@@ -127,6 +126,7 @@ li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #ffffff;
 }
 .social-media-icons a .icon svg {
   height: 100%;
