@@ -87,18 +87,12 @@ li a {
 	justify-content: center;
 }
 .newsletter-frame {
-  background: #1e2c3e;
+  background: #1d2c41;
   margin: 0 auto;
   width: 100%;
   max-width: 1360px;
   padding-inline-start: 40px;
   padding-inline-end: 40px;
-}
-.newsletter-frame a {
-  color: #ffffff;
-}
-.newsletter-fram svg * {
-  fill: #ffffff;
 }
 .updates-bar {
   display: grid; 
