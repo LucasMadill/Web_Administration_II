@@ -13,6 +13,7 @@ body {
 header {  
   background: light-blue;
   position: fixed;
+  margin: 0px;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -36,7 +37,6 @@ div {
 section {
   margin: 5px;
   padding: 25px;
-  borderwidth: 10px;
 }
 table, th, td {
 	border: 1px solid black;
@@ -136,6 +136,5 @@ li a {
 .social-media-icons a .icon svg {
   height: 100%;
   width: 100%;
-  fill: none;
 }
 
