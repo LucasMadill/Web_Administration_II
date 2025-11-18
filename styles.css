@@ -1,3 +1,6 @@
+:root {
+  --color-background-header: #ffffff;
+}
 element.style {
   display: block;
 }
