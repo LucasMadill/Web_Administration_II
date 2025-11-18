@@ -1,4 +1,7 @@
-* {
+element.style {
+  display: block;
+}
+input, :before :after, * {
   box-sizing: border-box;
 }
 body {
@@ -29,6 +32,7 @@ div {
   vertical-align: baseline;
   margin: 0px;
   padding: 0px;
+  border: 0px;
   border-width: 0px;
   unicode-bidi: isolate;
 }
@@ -84,4 +88,17 @@ li a {
 .table-container {
 	display: flex;
 	justify-content: center;
+}
+.newsletter-frame {
+  background: #1e2c3e;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
+.updates-bar {
+  display: grid; align-content: normal; justify-content: normal; align-items: center; justify-items: normal;
+  min-height: 2.6rem;
+  grid-template-columns: 27% 46% 27%;
 }
