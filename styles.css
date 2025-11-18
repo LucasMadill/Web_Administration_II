@@ -65,9 +65,6 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-svg {
-  fill: none;
-}
 .navigation-frame {
   height: 75px;
   display: flex;
@@ -148,4 +145,6 @@ svg {
 .social-media-icons a .icon svg {
   height: 100%;
   width: 100%;
+  fill: none;
 }
+
