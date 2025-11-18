@@ -98,7 +98,25 @@ li a {
   padding-inline-end: 40px;
 }
 .updates-bar {
-  display: grid; align-content: normal; justify-content: normal; align-items: center; justify-items: normal;
+  display: grid; 
+  align-items: center;
   min-height: 2.6rem;
   grid-template-columns: 27% 46% 27%;
+}
+.updates-bar-social-media {
+  padding-inline-end: 1.25rem;
+}
+.social-media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline-start: -.3125rem;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
