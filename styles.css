@@ -65,6 +65,9 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
+svg {
+  fill: none;
+}
 .navigation-frame {
   height: 75px;
   display: flex;
