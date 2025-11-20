@@ -87,12 +87,12 @@ li a {
 	justify-content: center;
 }
 .newsletter-frame {
-  background: #1d2c41;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1360px;
-  padding-inline-start: 40px;
-  padding-inline-end: 40px;
+  	background: #1d2c41;
+  	margin: 0 auto;
+  	width: 100%;
+  	max-width: 1360px;
+  	padding-inline-start: 40px;
+  	padding-inline-end: 40px;
 	border-radius: 10px;
 }
 .updates-bar {
@@ -144,6 +144,7 @@ li a {
 	height: 2rem;
 	margin: .3125rem;
 	border: none;
+}
 .codices-signup a .text {
 	color: #ffffff;
 	height: 100%;
