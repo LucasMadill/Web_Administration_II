@@ -115,13 +115,13 @@ li a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
+  width: 5rem;
   height: 3rem;
   margin: .3125rem;
   border: none;
 }
 .social-media-icons a .icon {
-  width: 3rem;
+  width: 5rem;
   height: 3rem;
   display: flex;
   align-items: center;
