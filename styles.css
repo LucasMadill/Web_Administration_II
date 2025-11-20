@@ -127,4 +127,6 @@ li a {
 .social-media-icons a .icon img {
   height: 100%;
 }
-
+.update-bar-codices-signup {
+	padding-inline-end: 1.25rem;
+}
