@@ -134,6 +134,15 @@ li a {
 	display: flex;
 	flex-wrap: wrap;
 	margin-inline-start: -.3125rem;
-	color: #fffffff;
-	font-size: 1.25em;
+}
+.codices-signup a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 8rem;
+	height: 2rem;
+	margin: .3125rem;
+	border: none;
+.codices-signup a .text {
+	height: 100%;
 }
