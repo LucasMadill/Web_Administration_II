@@ -62,15 +62,12 @@ li a {
   background-color: #dddddd;
 }
 .navigation-frame {
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1760px;
-  width: 100%;
-  z-index: 997;
-  padding: 0px 20px;
-  margin: 0px auto;
+  	background: #ffffff;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1360px;
+	padding-inline-start: 80px;
+	padding-inline-end: 80px;
 }
 .logo {
   max-width: 200px;
