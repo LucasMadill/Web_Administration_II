@@ -93,6 +93,7 @@ li a {
   max-width: 1360px;
   padding-inline-start: 40px;
   padding-inline-end: 40px;
+	border-radius: 10px;
 }
 .updates-bar {
   display: grid; 
