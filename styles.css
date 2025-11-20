@@ -131,6 +131,9 @@ li a {
 	padding-inline-end: 1.25rem;
 }
 .codices-signup {
+	display: flex;
+	flex-wrap: wrap;
+	margin-inline-start: -.3125rem;
 	color: #fffffff;
 	font-size: 1.25em;
 }
