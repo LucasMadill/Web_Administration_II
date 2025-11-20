@@ -98,7 +98,7 @@ li a {
   display: grid; 
   align-items: center;
   min-height: 2.6rem;
-  grid-template-columns: 27% 46% 27%;
+  grid-template-columns: 40% 20% 40%;
 }
 .updates-bar-social-media {
   padding-inline-end: 1.25rem;
