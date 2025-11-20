@@ -121,13 +121,13 @@ li a {
   border: none;
 }
 .social-media-icons a .icon {
-  width: 5rem;
-  height: 3rem;
+  width: 3rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .social-media-icons a .icon img {
-  height: fit-content;
+  height: 100%;
 }
 
