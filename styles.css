@@ -108,15 +108,6 @@ li a {
   flex-wrap: wrap;
   margin-inline-start: -.3125rem;
 }
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
 .social-media-icons a {
   display: inline-flex;
   align-items: center;
@@ -133,7 +124,7 @@ li a {
   align-items: center;
   justify-content: center;
 }
-.social-media-icons a .icon svg {
+.social-media-icons a .icon img {
   height: 100%;
   width: 100%;
 }
