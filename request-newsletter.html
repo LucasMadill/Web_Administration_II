@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Request Codices Updates</title>
-   </head>
-   <body>
-      <h1>Submit Data to Neon DB</h1>
-      <form id="dataForm">
-         <label>
-            Name:
-            <input type="text" name="name" required />
-         </label>
-         <br><br>
-         <label>
-            Email:
-            <input type="email" name="email" required />
-         </label>
-         <br><br>
-         <button type="submit">Submit</button>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit to Neon DB</title>
+</head>
+<body>
+  <h1>Submit Data to Neon DB</h1>
+  <form id="dataForm">
+    <label>Name: <input type="text" name="name" required></label><br><br>
+    <label>Email: <input type="email" name="email" required></label><br><br>
+    <button type="submit">Submit</button>
+  </form>
 
-      <p id="status"></p>
+  <p id="status"></p>
 
-      <script>
-         document.getElementById('dataForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const data = Object.fromEntries(formData.entries());
+  <script>
+    document.getElementById('dataForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = {
+        name: e.target.name.value,
+        email: e.target.email.value
+      };
 
-            try {
-               const res = await fetch('/.netlify/functions/submit', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json'},
-                  body: JSON.stringify(data)
-               });
+      try {
+        const res = await fetch('/.netlify/functions/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
 
-               const result = await res.json();
-               document.getElementByID('status').textContent = result.message || 'Success!';
-            } catch (err) {
-               document.getElementById('status').textContent = 'Error: ' + err.message;
-            }
-         });
-      </script>
-   </body>
+        const data = await res.json();
+        document.getElementById('status').textContent = data.message || 'Success!';
+      } catch (err) {
+        document.getElementById('status').textContent = 'Error: ' + err.message;
+      }
+    });
+  </script>
+</body>
 </html>
