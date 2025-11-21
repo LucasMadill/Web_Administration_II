@@ -147,5 +147,7 @@ li a {
 }
 .codices-signup a .text {
 	color: #ffffff;
-	height: 100%;
+	font-size-adjust: .78;
+	align-items: center;
+	justify-content: center;
 }
