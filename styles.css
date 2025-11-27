@@ -1,3 +1,6 @@
+html {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
 element.style {
   display: block;
 }
@@ -32,74 +35,25 @@ div {
   padding: 0px;
   border: 0px;
   border-width: 0px;
-  unicode-bidi: isolate;
 }
 section {
   margin: 5px;
   padding: 25px;
 }
-table, th, td {
-	border: 1px solid black;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  float: left;
-  border-right: 1px solid #bbbbbb;
-  background-color: #27B0F5;
-}
-li:hover {
-  float: left;
-  border-right: 1px solid #bbbbbb;
-  background-color: #eeeeee;
-}
-li a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-}
-.navigation-frame {
-  	background: #ffffff;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1360px;
-	padding-inline-start: 80px;
-	padding-inline-end: 80px;
-}
-.logo {
-  max-width: 200px;
-  padding-top: 7px;
-  padding-bottom: 0.69px;
-}
-.header-right {
-  display: flex;
-  align-items: center;
-}
-.header-left {
-	display: flex;
-	align-items: center;
-}
-.table-container {
-	display: flex;
-	justify-content: center;
-}
 .newsletter-frame {
-  	background: #1d2c41;
-  	margin: 0 auto;
-  	width: 100%;
-  	max-width: 1360px;
-  	padding-inline-start: 40px;
-  	padding-inline-end: 40px;
+  background: #1d2c41;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
 	border-radius: 10px;
 }
 .updates-bar {
   display: grid; 
   align-items: center;
   min-height: 2.6rem;
-  grid-template-columns: 40% 20% 40%;
+  grid-template-columns: 50% 20% 30%;
 }
 .updates-bar-social-media {
   padding-inline-end: 1.25rem;
@@ -129,16 +83,65 @@ li a {
   height: 100%;
 }
 .updates-bar-announcements {
-  display: inline-flex;
+  padding-inline-end: 1.25rem;
 }
 .announcements {
-  color: #ffffff;
-  font-style: normal;
+  display: contents;
+  align-items: center;
+  justify-items: center;
 }
 .updates-bar-codices-signup {
-  display: inline-flex;
+  padding-inline-end: 1.25rem;
 }
 .codices-signup {
+  display: content;
+  align-items: center;
+  justify-items: center;
+}
+.codices-signup a {
+  font-display: block;
+}
+.codices-signup a:link {
   color: #ffffff;
-  font-style: normal;
+}
+.codices-signup a:visited {
+  color: lightgray;
+}
+.codices-signup a:hover {
+  color: lightyellow;
+}
+.navigation-frame {
+  background: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+	border-radius: 10px;
+}
+table {
+	table-layout: fixed;
+  width:90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+caption {
+  padding: 1 em;
+  font-style: italic;
+  caption-side: bottom;
+  letter-spacing: 1 px;
+}
+td {
+  color: black;
+  padding: 0.6em;
+  vertical-align: top;
+  padding: 0.3em;
+}
+caption {
+  padding: 1em;
+  font-style: italic;
+  caption-side: top;
+  letter-spacing: 1px;
 }
