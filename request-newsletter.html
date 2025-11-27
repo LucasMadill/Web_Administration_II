@@ -24,7 +24,7 @@
       };
 
       try {
-        const res = await fetch('/.netlify/functions/submit', {
+        const res = await fetch('/.netlify/functions/submit/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)
@@ -35,6 +35,7 @@
       } catch (err) {
         document.getElementById('status').textContent = 'Error: ' + err.message;
       }
+	  
     });
   </script>
 </body>

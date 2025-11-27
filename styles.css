@@ -128,26 +128,17 @@ li a {
 .social-media-icons a .icon img {
   height: 100%;
 }
-.update-bar-codices-signup {
-	padding-inline-end: 1.25rem;
+.updates-bar-announcements {
+  display: inline-flex;
+}
+.announcements {
+  color: #ffffff;
+  font-style: normal;
+}
+.updates-bar-codices-signup {
+  display: inline-flex;
 }
 .codices-signup {
-	display: flex;
-	flex-wrap: wrap;
-	margin-inline-start: -.3125rem;
-}
-.codices-signup a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 8rem;
-	height: 2rem;
-	margin: .3125rem;
-	border: none;
-}
-.codices-signup a .text {
-	color: #ffffff;
-	font-size-adjust: .78;
-	align-items: center;
-	justify-content: center;
+  color: #ffffff;
+  font-style: normal;
 }
