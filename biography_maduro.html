@@ -4,27 +4,221 @@
 	  <meta charset="UTF-8">
 	  <title>Maduro Biography</title>
 	  <link rel="stylesheet" type="text/css" href ="styles.css">
+	  <style>
+		color: black;
+	  </style>
   </head>
   <body>
-    <section>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="reclaimers.html">The Reclaimers</a></li>
-			<li><a href="kinsman_redeemer.html">The Kinsman Redeemer</a></li>
-			<li><a href="ranger_of_the_nothern_star.html">The Ranger of the Northern Star</a></li>
-			<li><a href="contact_us.html">Contact Us</a></li>
-			<li><a href="biography_madill.html">Madill Biography</a></li>
-			<li><a href="biography_maduro.html">Maduro Biography</a></li>
-			<li><a href="feed_back.html">Feed Back</a></li>
-		</ul>		
-	</section>
-	<section>
-		<br><h1>Kaliska Maduro</h1></br>
-		<p>Phone Number: (417)-499-0723<br>kalmaduro04@outlook.com</br><hr>1007 International Avenue<br>Joplin, MO</br></p>
-		<h2>Education</h2>
-		<p>Missouri Southern State University<br>3950 E. Newman Road, Joplin MO 64801</br>BS in Information Technology<hr><br>Hamilton Lavity Stoutt Community College</br>Paraquita Bay, Tortola, British Virgin Islands VG1110<br>AA in Business Administration</br></p>
-	  <h2>Memberships</h2>
-		<p>Member<br>National Technical Honor Society</br><hr><br>Member</br>Phi Theta Kappa</br></p>
-  </section>
+	<header>
+			<div class="newsletter-frame"> 
+				<!--Desktop Version only. Need to add different screens later.-->
+				<div class="updates-bar">
+					<!--Social media presence creation-->
+					<div class="updates-bar-social-media">
+						<!--Main social media platforms-->
+						<div class="social-media-icons">
+							<!--I must be where people live and dream-->
+							<a href="https://www.facebook.com/le.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Face Book" src="Facebook_Logo_Secondary.png">
+								</span>
+							</a>
+							<a href="https://www.youtube.com/@El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="YouTube" src="yt_logo_white_digital.png">
+								</span>
+							</a>
+							<a href="https://x.com/El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="X" src="X-logo-white.png">
+								</span>
+							</a>
+							<a href="https://www.instagram.com/@el_derek_akuna/" target="_blank">
+								<span class="icon">
+									<image alt="Instagram" src="Instagram_Glyph_White.png">
+								</span>
+							</a>
+							<a href="https://www.tiktok.com/el.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Tiktok" src="TikTok-logo-CMYK-Horizontal-white-simplified.png">
+								</span>
+							</a>
+						</div>
+					</div>
+					<!--This is a space saved for chapter updates complete or book publishing notices-->
+					<div class="updates-bar-announcements">
+						<div class ="announcments">
+						</div>						
+					</div>
+					<div class="updates-bar.codices-signup">
+						<div class="codices-signup">
+							<a href="https://www.thevolitionofkind.com/request-newsletter.html" target="_blank">
+								<span class="text">
+									<h3>Codices Signup</h3>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navigation-frame">
+				<table>
+					<tbody>
+						<tr>
+							<th rowspan="3" class="form">
+								<a href="https://www.restoringacres.com" target="_blank">
+									<span class="logo">
+										<img alt="Restoring Acres" src="Restoring_Acres_Logo_Final.png" height="200" width=auto>
+									</span>
+								</a>
+							</th>							
+							<td colspan="5"><h1>The Volition of Kind</h1></td>							
+							<td rowspan="3" class="form">
+								<form action="https://www.restoringacres.com" method="post">
+									<p>
+										<input type="hidden" name="recipient" value="type"/>
+										<input type="hidden" name="subject" value="login"/>
+										<input type="hidden" name="redirect" value="index.html"/>
+									</p>
+									<p><label>Username:
+											<input name="username" type="text" size="15" maxlength="20"/>
+										</label>
+									</p>
+									<p><label>Password:
+											<input name="password" type="password" size="15" maxlength="20"/>
+										</label>
+									</p>
+									<p>
+										<input type="submit" value="Submit"/>
+										<input type="reset" value="Reset"/>
+									</p>
+								</form>
+							</td>
+						</tr>
+						<tr>		
+							<td colspan="5"><h2>From the mind of Derek Akuna</h2></td>
+						</tr>
+						<tr>							
+							<td>
+								<div class="button">
+									<button onclick="homeClick()" class="button-link">Home</button>																											
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('contact_us.html')" class="button-link">Contact us</button>
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('book_series.html')" class="button-link">Book Series</button>
+								</div>
+							</td>
+							<td>
+								<div class="drop-down">
+									<button onclick="toggleDropDown()" class="drop-button">Biographies</button>
+									<div id="my-drop-down" class="drop-down-content">
+										<a href="biography_maduro.html" target="_blank">Maduro</a>
+										<a href="biography_madill.html" target="_blank">Madill</a>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('feed_back.html')" class="button-link">Feed Back</button>
+								</div>
+							</td>							
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="7"><h3>In the begining, there was an abyss and the earth was formless.</h3></td>
+						</tr>
+					</tfoot>
+				</table>
+				<script>
+					function homeClick() {
+						window.open('https://www.thevolitionofkind.com/', '_self');
+					}
+					function buttonClick(rowHtml){
+						window.open('https://www.thevolitionofkind.com/' + rowHtml, '_blank');
+					}
+					function toggleDropDown() {
+						document.getElementById("my-drop-down").classList.toggle("show");
+					}
+					window.onclick = function(event) {
+						if (!event.target.matches('.drop-button')) {
+							var dropDowns = document.getElementsByClassName("drop-down-content");
+							for (var i = 0; i < dropDowns.length; i++) {
+								var openDropDown = dropDowns[i];
+								if (openDropDown.classList.contains('show')) {
+									openDropDown.classList.remove('show');
+								}
+							}
+						}
+					}
+				</script>		
+			</div>
+		</header>
+		<main>
+			<div class="biography-section">
+				<div class="biography-contact-section">
+					<<h1>Kaliska Maduro</h1>
+					<p>Phone Number: (417)-499-0723<br>kalmaduro04@outlook.com</br>1007 International Avenue<br>Joplin, MO</br></p>
+				</div>	
+				<div class="biography-education-section">								
+					<h2>Education</h2>
+					<p>Missouri Southern State University<br>3950 E. Newman Road, Joplin MO 64801</br>BS in Information Technology<br>Hamilton Lavity Stoutt Community College</br>Paraquita Bay, Tortola, British Virgin Islands VG1110<br>AA in Business Administration</br></p>
+				</div>
+				<div class="biography-memberships-section">
+					<h2>Memberships</h2>
+					<p><u>Member</u><br>National Technical Honor Society</br><u>Member</u><br>Phi Theta Kappa</br></p>
+				</div>  			
+			</div>			
+		</main>
+		<footer>
+			<div class="newsletter-frame"> 
+				<!--Desktop Version only. Need to add different screens later.-->
+				<div class="updates-bar">
+					<!--Social media presence creation-->
+					<div>
+
+					</div>
+					<div>
+						
+					</div>
+					<div class="updates-bar-social-media">
+						<!--Main social media platforms-->
+						<div class="social-media-icons">
+							<!--I must be where people live and dream-->
+							<a href="https://www.facebook.com/le.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Face Book" src="Facebook_Logo_Secondary.png">
+								</span>
+							</a>
+							<a href="https://www.youtube.com/@El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="YouTube" src="yt_logo_white_digital.png">
+								</span>
+							</a>
+							<a href="https://x.com/El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="X" src="X-logo-white.png">
+								</span>
+							</a>
+							<a href="https://www.instagram.com/@el_derek_akuna/" target="_blank">
+								<span class="icon">
+									<image alt="Instagram" src="Instagram_Glyph_White.png">
+								</span>
+							</a>
+							<a href="https://www.tiktok.com/el.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Tiktok" src="TikTok-logo-CMYK-Horizontal-white-simplified.png">
+								</span>
+							</a>
+						</div>
+					</div>					
+				</div>
+		</footer>
   </body>
 </html>

@@ -1,5 +1,7 @@
 // netlify/functions/submit.js
-import { Client } from '@neondatabase/serverless';
+import { neon } from '@neondatabase/serverless';
+
+const sql=neon(process.env.NEON_DATABASE_URL)
 
 export default async function handler(event, context) {
   // Allow only POST
@@ -10,8 +12,9 @@ export default async function handler(event, context) {
     };
   }
 
+  let data
   try {
-    const { name, email } = JSON.parse(event.body || '{}');
+    const { name, email } = data;
 
     // Basic validation
     if (!name || !email) {
@@ -22,7 +25,7 @@ export default async function handler(event, context) {
     }
 
     // Connect to Neon DB
-    const client = new Client(process.env.NETLIFY_DATABASE_URL);
+    const client = neon(process.env.NEON_DATABASE_URL);
     await client.connect();
 
     // Insert data
