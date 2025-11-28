@@ -1,54 +1,235 @@
-<!doctype html>
-<html lang="en-us">  
-<head>
-	<meta charset="UTF-8">
-	<title>Contact Us</title>
-	<link rel="stylesheet" type="text/css" href ="styles.css">
-</head>
-<body>
-	<header>
-		<div class="navigation-frame">
-			<div class="logo">
-				<a href="https://restoringacres.com"><img alt="Restoring Acres" height="82" src="Restoring_Acres_Logo_Final.png"></a>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Us</title>
+		<link rel="shortcut icon" href="Cross_FAVACON.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href ="styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="newsletter-frame"> 
+				<!--Desktop Version only. Need to add different screens later.-->
+				<div class="updates-bar">
+					<!--Social media presence creation-->
+					<div class="updates-bar-social-media">
+						<!--Main social media platforms-->
+						<div class="social-media-icons">
+							<!--I must be where people live and dream-->
+							<a href="https://www.facebook.com/le.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Face Book" src="Facebook_Logo_Secondary.png">
+								</span>
+							</a>
+							<a href="https://www.youtube.com/@El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="YouTube" src="yt_logo_white_digital.png">
+								</span>
+							</a>
+							<a href="https://x.com/El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="X" src="X-logo-white.png">
+								</span>
+							</a>
+							<a href="https://www.instagram.com/@el_derek_akuna/" target="_blank">
+								<span class="icon">
+									<image alt="Instagram" src="Instagram_Glyph_White.png">
+								</span>
+							</a>
+							<a href="https://www.tiktok.com/el.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Tiktok" src="TikTok-logo-CMYK-Horizontal-white-simplified.png">
+								</span>
+							</a>
+						</div>
+					</div>
+					<!--This is a space saved for chapter updates complete or book publishing notices-->
+					<div class="updates-bar-announcements">
+						<div class ="announcments">
+						</div>						
+					</div>
+					<div class="updates-bar.codices-signup">
+						<div class="codices-signup">
+							<a href="https://www.thevolitionofkind.com/request-newsletter.html" target="_blank">
+								<span class="text">
+									<h3>Codices Signup</h3>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="header-right">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contact_us.html">Contact Us</a></li>
-					<li><a href="biography_madill.html">Madill Biography</a></li>
-					<li><a href="feed_back.html">Feed Back</a></li>
-				</ul>
+			<div class="navigation-frame">
+				<table>
+					<tbody>
+						<tr>
+							<th rowspan="3" class="form">
+								<a href="https://www.restoringacres.com" target="_blank">
+									<span class="logo">
+										<img alt="Restoring Acres" src="Restoring_Acres_Logo_Final.png" height="200" width=auto>
+									</span>
+								</a>
+							</th>							
+							<td colspan="5"><h1>The Volition of Kind</h1></td>							
+							<td rowspan="3" class="form">
+								<form action="https://www.restoringacres.com" method="post">
+									<p>
+										<input type="hidden" name="recipient" value="type"/>
+										<input type="hidden" name="subject" value="login"/>
+										<input type="hidden" name="redirect" value="index.html"/>
+									</p>
+									<p><label>Username:
+											<input name="username" type="text" size="15" maxlength="20"/>
+										</label>
+									</p>
+									<p><label>Password:
+											<input name="password" type="password" size="15" maxlength="20"/>
+										</label>
+									</p>
+									<p>
+										<input type="submit" value="Submit"/>
+										<input type="reset" value="Reset"/>
+									</p>
+								</form>
+							</td>
+						</tr>
+						<tr>		
+							<td colspan="5"><h2>From the mind of Derek Akuna</h2></td>
+						</tr>
+						<tr>							
+							<td>
+								<div class="button">
+									<button onclick="homeClick()" class="button-link">Home</button>																											
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('contact_us.html')" class="button-link">Contact us</button>
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('book_series.html')" class="button-link">Book Series</button>
+								</div>
+							</td>
+							<td>
+								<div class="drop-down">
+									<button onclick="toggleDropDown()" class="drop-button">Biographies</button>
+									<div id="my-drop-down" class="drop-down-content">
+										<a href="biography_maduro.html" target="_blank">Maduro</a>
+										<a href="biography_madill.html" target="_blank">Madill</a>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="button">
+									<button onclick="buttonClick('feed_back.html')" class="button-link">Feed Back</button>
+								</div>
+							</td>							
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="7"><h3>In the begining, there was a being called Discernment.</h3></td>
+						</tr>
+					</tfoot>
+				</table>
+				<script>
+					function homeClick() {
+						window.open('https://www.thevolitionofkind.com/', '_self');
+					}
+					function buttonClick(rowHtml){
+						window.open('https://www.thevolitionofkind.com/' + rowHtml, '_blank');
+					}
+					function toggleDropDown() {
+						document.getElementById("my-drop-down").classList.toggle("show");
+					}
+					window.onclick = function(event) {
+						if (!event.target.matches('.drop-button')) {
+							var dropDowns = document.getElementsByClassName("drop-down-content");
+							for (var i = 0; i < dropDowns.length; i++) {
+								var openDropDown = dropDowns[i];
+								if (openDropDown.classList.contains('show')) {
+									openDropDown.classList.remove('show');
+								}
+							}
+						}
+					}
+				</script>		
 			</div>
-		</div>
-	</header>
-	<main>
-		<div> 
-			<section>
-				<h1><br>Contact Information</h1>
-				<hr>
-				<table class="table-container">
-					<tr>
-						<th>Kaliska Maduro</th>
-						<th>Lucas B. Madill</th>
-					</tr>									
+		</header>
+		<main>
+			<div> 
+				<section>
+					<h1><br>Contact Information</h1>
+					<hr>
+					<table class="table-container">
+						<tr>
+							<th>Kaliska Maduro</th>
+							<th>Lucas B. Madill</th>
+						</tr>									
 					<tr>
 						<td>
-						<p>Title: <strong>Website Administrator</strong><br>
-						Major: <em>Computer Information Systems</em><br>
-						Student ID: <i>00703139</i><br>
-						E-mail: <strong>Madurok001@mymail.mssu.edu</strong></p>
+							<p>Title: <strong>Website Administrator</strong><br>
+							Major: <em>Computer Information Systems</em><br>
+							Student ID: <i>00703139</i><br>
+							E-mail: <strong>Madurok001@mymail.mssu.edu</strong></p>
 						</td>
 						<td>
-						<p>Title: Website Administrator<br>
-						Major: <em>Computer Information Systems</em><br>
-						Student ID: <i>00712610</i><br>
-						E-mail: <strong>MadillL001@mymail.mssu.edu</strong></p>
+							<p>Title: Website Administrator<br>
+							Major: <em>Computer Information Systems</em><br>
+							Student ID: <i>00712610</i><br>
+							E-mail: <strong>MadillL001@mymail.mssu.edu</strong></p>
 						</td>				
 					</tr>						
 				</table>		
-			<hr>
-		</section>	
-		</div>
-	</main>	
-</body>
+				<hr>
+				</section>	
+			</div>
+		</main>
+		<footer>
+			<div class="newsletter-frame"> 
+				<!--Desktop Version only. Need to add different screens later.-->
+				<div class="updates-bar">
+					<!--Social media presence creation-->
+					<div>
+
+					</div>
+					<div>
+						
+					</div>
+					<div class="updates-bar-social-media">
+						<!--Main social media platforms-->
+						<div class="social-media-icons">
+							<!--I must be where people live and dream-->
+							<a href="https://www.facebook.com/le.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Face Book" src="Facebook_Logo_Secondary.png">
+								</span>
+							</a>
+							<a href="https://www.youtube.com/@El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="YouTube" src="yt_logo_white_digital.png">
+								</span>
+							</a>
+							<a href="https://x.com/El_Derek_Akuna/" target="_blank">
+								<span class="icon">
+									<image alt="X" src="X-logo-white.png">
+								</span>
+							</a>
+							<a href="https://www.instagram.com/@el_derek_akuna/" target="_blank">
+								<span class="icon">
+									<image alt="Instagram" src="Instagram_Glyph_White.png">
+								</span>
+							</a>
+							<a href="https://www.tiktok.com/el.derek.akuna/" target="_blank">
+								<span class="icon">
+									<img alt="Tiktok" src="TikTok-logo-CMYK-Horizontal-white-simplified.png">
+								</span>
+							</a>
+						</div>
+					</div>					
+				</div>
+		</footer>
+	</body>
 </html>
