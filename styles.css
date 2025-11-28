@@ -27,7 +27,14 @@ main {
   
 }
 footer {
-	
+	background: light-blue;
+  position:fixed; 
+  margin: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  padding: 1px;
 }
 div {
   vertical-align: baseline;
