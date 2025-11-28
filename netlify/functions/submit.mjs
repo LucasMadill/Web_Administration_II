@@ -1,5 +1,5 @@
 // netlify/functions/submit.js
-import { Client } from '@neondatabase/serverless';
+import { neon } from '@netlify/neon';
 
 export default async function handler(event, context) {
   // Allow only POST
